@@ -15,4 +15,5 @@ resource "aws_db_instance" "default" {
   identifier           = var.id
   vpc_security_group_ids = ["sg-0b5441c2b43454068"]
   publicly_accessible = true
+  skip_final_snapshot = true
 }
